@@ -1,0 +1,15 @@
+{
+    "name": "kevindoveton/one-time-secret",
+    "require": {
+        "vlucas/phpdotenv": "^2.4",
+        "jaybizzle/crawler-detect": "^1.2",
+        "twig/twig": "^2.0",
+        "ext-openssl": "^0.0.0"
+    },
+    "authors": [
+        {
+            "name": "Kevin Doveton",
+            "email": "kevindoveton@me.com"
+        }
+    ]
+}
