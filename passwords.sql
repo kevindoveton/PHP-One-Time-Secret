@@ -41,6 +41,12 @@ ALTER TABLE `passwords`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `code` (`code`);
 
+--
+-- AUTO_INCREMENT for table `passwords`
+--
+ALTER TABLE `passwords`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
+
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
