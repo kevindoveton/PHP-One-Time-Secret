@@ -26,4 +26,7 @@ if ($hash[1] == 'demo') {
 
 $loader = new Twig_Loader_Filesystem(__DIR__ . '/../Templates');
 $twig = new Twig_Environment($loader, array());
-echo $twig->render('GetPassword.twig', array('password' => $pw));
+echo $twig->render('GetPassword.twig', array(
+  'password' => $pw,
+  'template' => 'GetPassword'
+));

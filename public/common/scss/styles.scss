@@ -1,0 +1,102 @@
+$mainBg: #1E1E1E;
+$lightBg: #333333;
+$text: #ffffff;
+$lightText: #bbbbbb;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+.content__container {
+  background: $mainBg;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  p.password,
+  p.value {
+    color: $text;
+    font-size: 40px;
+    word-break: break-word;
+    white-space: pre-wrap;
+  }
+
+  p.value {
+    font-size: 18px;
+  }
+
+  p.title {
+    color: $lightText;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  .url {
+    display: none;
+  }
+  button {
+    margin-top: 8px;
+    border: 1px solid $text;
+    background: $lightBg;
+    color: $text;
+    width: 150px;
+    padding: 4px;
+    text-transform: lowercase;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  input {
+    display: block;
+    max-width: 250px;
+    width: 250px;
+    background: $lightBg;
+    border: 1px solid $text;
+    padding: 8px;
+    font-size: 18px;
+    color: $text;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  .content__password,
+  .url {
+    padding: 16px;
+  }
+
+}
+
+.copied {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .5s all;
+  background: rgba(#000000, 0.9);
+
+  p {
+    color: $text;
+    padding: 30px 60px;
+    line-height: 1.2em;
+    min-width: 150px;
+    text-align: center;
+  }
+}

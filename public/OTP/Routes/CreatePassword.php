@@ -24,5 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 } else {
   $loader = new Twig_Loader_Filesystem(__DIR__ . '/../Templates');
   $twig = new Twig_Environment($loader, array());
-  echo $twig->render('CreatePassword.twig', array());
+  echo $twig->render('CreatePassword.twig', array(
+    'template' => 'CreatePassword'
+  ));
 }

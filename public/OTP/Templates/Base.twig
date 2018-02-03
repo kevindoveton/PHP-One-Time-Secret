@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="{{template}}">
   <head>
     <title>OTP</title>
     <meta name="viewport" content="width=device-width, initial-size=1">
@@ -7,8 +7,7 @@
     <meta name="og:type" content="website">
     <meta name="og:description" content="This contains a link to view a password, as soon as you 
       click it the link will no longer work.">
-    <link rel="stylesheet" type="text/css" href="/common/styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/common/min/?css">
 
 
 {% block head %}{% endblock %}
@@ -21,5 +20,7 @@
 
 {% block footer %}{% endblock %}
   
+  <script src="/common/min/?js"></script>
+
   </body>
 </html>
