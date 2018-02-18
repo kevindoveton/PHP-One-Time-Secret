@@ -1,0 +1,11 @@
+{% embed "Base.twig" %}
+
+  {% block body %}
+    <div class="content content__container">
+      {% if alreadySetup %}
+        <p>Already set up.</p>
+      {% endif %}
+    </div>
+  {% endblock %}
+
+{% endembed %}

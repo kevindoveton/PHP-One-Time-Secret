@@ -1,4 +1,6 @@
 const clipboard = new Clipboard('[data-clipboard-target]');
+
+// show the copied to clipboard screen
 clipboard.on('success', function (e) {
   e.clearSelection();
   const copied = document.querySelector('.copied');
@@ -18,7 +20,7 @@ clipboard.on('success', function (e) {
 
 function processForm() {
   const url = window.location.href;
-  console.log(url);
+
   fetch(url, {
     method: 'POST',
     body: JSON.stringify({
@@ -41,4 +43,8 @@ function processForm() {
     document.querySelector('.url').style.display = 'block';
   });
 
+}
+
+function revealPassword() {
+  document.querySelector('#password-value').style.filter = "blur(0)";
 }

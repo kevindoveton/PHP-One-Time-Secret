@@ -22,6 +22,9 @@ class RouteController {
       case 'get':
         require_once('GetPassword.php');
         break;
+      case 'setup':
+        require_once('Setup.php');
+        break;
       default:
         require_once('CreatePassword.php');
     }

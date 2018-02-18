@@ -38,14 +38,21 @@ body {
     font-size: 18px;
   }
 
+  p.password {
+    filter: blur(8px);
+    margin-bottom: 8px;
+  }
+
   p.title {
     color: $lightText;
     font-size: 16px;
     text-transform: uppercase;
   }
+
   .url {
     display: none;
   }
+
   button {
     margin-top: 8px;
     border: 1px solid $text;
@@ -58,6 +65,10 @@ body {
     &:focus {
       outline: 0;
     }
+  }
+
+  .reveal {
+    margin-right: 16px;
   }
 
   input {
@@ -81,6 +92,10 @@ body {
     padding: 16px;
   }
 
+}
+
+.hide {
+  display: none
 }
 
 .copied {
