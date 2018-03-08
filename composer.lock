@@ -4,21 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b43d3b76e5b407f58303ac6e5d5ce288",
-    "content-hash": "4946645c137ff1395cc99fe3384ce45f",
+    "content-hash": "9c52709c0a803ea38f2a04e43228490b",
     "packages": [
         {
             "name": "jaybizzle/crawler-detect",
-            "version": "v1.2.56",
+            "version": "v1.2.60",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JayBizzle/Crawler-Detect.git",
-                "reference": "fb89599ea8b113b31683419e87461d07ff84aa0e"
+                "reference": "6e9abfe7100f1c8febfa600b3568192989f10c2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/fb89599ea8b113b31683419e87461d07ff84aa0e",
-                "reference": "fb89599ea8b113b31683419e87461d07ff84aa0e",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/6e9abfe7100f1c8febfa600b3568192989f10c2e",
+                "reference": "6e9abfe7100f1c8febfa600b3568192989f10c2e",
                 "shasum": ""
             },
             "require": {
@@ -54,20 +53,20 @@
                 "crawlerdetect",
                 "php crawler detect"
             ],
-            "time": "2018-01-31 19:47:49"
+            "time": "2018-03-05T20:50:06+00:00"
         },
         {
             "name": "leafo/scssphp",
-            "version": "v0.7.4",
+            "version": "v0.7.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/leafo/scssphp.git",
-                "reference": "d7296256bd1bfacb8bd24e69030fd5e187181835"
+                "reference": "8b538d828bbb75276974605c4a1a435e939da74e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/leafo/scssphp/zipball/d7296256bd1bfacb8bd24e69030fd5e187181835",
-                "reference": "d7296256bd1bfacb8bd24e69030fd5e187181835",
+                "url": "https://api.github.com/repos/leafo/scssphp/zipball/8b538d828bbb75276974605c4a1a435e939da74e",
+                "reference": "8b538d828bbb75276974605c4a1a435e939da74e",
                 "shasum": ""
             },
             "require": {
@@ -106,7 +105,7 @@
                 "scss",
                 "stylesheet"
             ],
-            "time": "2017-12-21 00:18:53"
+            "time": "2018-02-09T02:04:21+00:00"
         },
         {
             "name": "matthiasmullie/minify",
@@ -166,7 +165,7 @@
                 "minifier",
                 "minify"
             ],
-            "time": "2018-02-02 12:44:18"
+            "time": "2018-02-02T12:44:18+00:00"
         },
         {
             "name": "matthiasmullie/path-converter",
@@ -215,7 +214,7 @@
                 "paths",
                 "relative"
             ],
-            "time": "2018-02-02 11:30:10"
+            "time": "2018-02-02T11:30:10+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -274,20 +273,20 @@
                 "portable",
                 "shim"
             ],
-            "time": "2018-01-30 19:27:44"
+            "time": "2018-01-30T19:27:44+00:00"
         },
         {
             "name": "twig/twig",
-            "version": "v2.4.4",
+            "version": "v2.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "eddb97148ad779f27e670e1e3f19fb323aedafeb"
+                "reference": "d2117ec118c1ff3d28ccddca8212d82787a4809f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/eddb97148ad779f27e670e1e3f19fb323aedafeb",
-                "reference": "eddb97148ad779f27e670e1e3f19fb323aedafeb",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/d2117ec118c1ff3d28ccddca8212d82787a4809f",
+                "reference": "d2117ec118c1ff3d28ccddca8212d82787a4809f",
                 "shasum": ""
             },
             "require": {
@@ -340,7 +339,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2017-09-27 18:10:31"
+            "time": "2018-03-03T16:23:01+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -390,7 +389,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2016-09-01 10:05:43"
+            "time": "2016-09-01T10:05:43+00:00"
         }
     ],
     "packages-dev": [],
@@ -399,8 +398,6 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {
-        "ext-openssl": "^0.0.0"
-    },
+    "platform": [],
     "platform-dev": []
 }
