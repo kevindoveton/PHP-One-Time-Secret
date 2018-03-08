@@ -31,7 +31,8 @@ SET time_zone = "+00:00";
 CREATE TABLE `passwords` (
   `id` int(255) NOT NULL,
   `code` varchar(255) NOT NULL,
-  `password` varchar(3072) NOT NULL
+  `password` varchar(3072) NOT NULL,
+  `expiration` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
