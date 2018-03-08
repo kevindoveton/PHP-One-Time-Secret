@@ -1,9 +1,14 @@
 <?php
 require_once('Controller.php');
 require_once(__DIR__ . '/../Config/Database.php');
+require_once(__DIR__ . '/../Config/Cron.php');
 
 $hash = RouteController::getSegments();
 $db = new Database();
+
+// delete old passwords
+$cron = new Cron();
+$cron->run();
 
 if (count($hash) < 2) {
   die('Routes/GetPassword: Not enough segments');

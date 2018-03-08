@@ -62,7 +62,7 @@ class Database {
     $code = bin2hex(openssl_random_pseudo_bytes($codeLength));
     $encPw = Cryptor::Encrypt($password, $this->encryptionKey);
 
-    $insertStmt = $this->writeDb->prepare("INSERT INTO passwords(password, code) VALUES (?, ?)");
+    $insertStmt = $this->writeDb->prepare("INSERT INTO passwords(password, code, expiration) VALUES (?, ?, DATE_ADD(now(), INTERVAL 1 HOUR))");
     $insertStmt->bind_param("ss", $encPw, $code);
     $insertResult = $insertStmt->execute();
     $insertStmt->close();
@@ -72,7 +72,15 @@ class Database {
     } else {
       return '';
     }
+  }
 
+  public function clearExpiredPasswords() {
+    if ($this->writeDb == null) {
+      $this->connectWrite();
+    }
+
+    $stmt = $this->writeDb->prepare("DELETE FROM `passwords` WHERE `expiration` <= CURDATE() AND `expiration` IS NOT NULL");
+    $stmt->execute();
   }
 
   private function connectWrite() {
