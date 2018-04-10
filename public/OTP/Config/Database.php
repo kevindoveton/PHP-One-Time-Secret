@@ -75,11 +75,11 @@ class Database {
   }
 
   public function clearExpiredPasswords() {
-    if ($this->writeDb == null) {
-      $this->connectWrite();
+    if ($this->readDb == null) {
+      $this->connectRead();
     }
 
-    $stmt = $this->writeDb->prepare("DELETE FROM `passwords` WHERE `expiration` <= CURDATE() AND `expiration` IS NOT NULL");
+    $stmt = $this->readDb->prepare("DELETE FROM `passwords` WHERE `expiration` <= CURDATE() AND `expiration` IS NOT NULL");
     $stmt->execute();
   }
 
